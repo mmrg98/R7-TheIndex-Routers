@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="430px" height="411px" viewBox="0 0 430 411" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-52.000000, 0.000000)" fill="#FFFFFF">
+            <g id="books" transform="translate(52.000000, 0.000000)" fill-rule="nonzero">
+                <path d="M87.5,0 L12.5,0 C5.625,0 0,5.625 0,12.5 L0,287.5 C0,294.375 5.625,300 12.5,300 L87.5,300 C94.375,300 100,294.375 100,287.5 L100,12.5 C100,5.625 94.375,0 87.5,0 Z M75,75 L25,75 L25,50 L75,50 L75,75 Z" id="Shape"></path>
+                <path d="M212.5,0 L137.5,0 C130.625,0 125,5.625 125,12.5 L125,287.5 C125,294.375 130.625,300 137.5,300 L212.5,300 C219.375,300 225,294.375 225,287.5 L225,12.5 C225,5.625 219.375,0 212.5,0 Z M200,75 L150,75 L150,50 L200,50 L200,75 Z" id="Shape"></path>
+                <path d="M231.8875,53.075 C225.75,56.16875 223.25625,63.725 226.35,69.8625 L338.84375,293.125 C341.9375,299.2625 349.49375,301.75625 355.63125,298.6625 L422.6125,264.9125 C428.75,261.81875 431.24375,254.2625 428.15,248.125 L315.65625,24.8625 C312.5625,18.725 305.00625,16.23125 298.86875,19.325 L231.8875,53.075 Z" id="Shape"></path>
+            </g>
+            <text id="-INDEX-" font-family="HoeflerText-Black, Hoefler Text" font-size="64" font-weight="bold" letter-spacing="10">
+                <tspan x="63.7106665" y="409">-</tspan>
+                <tspan x="100.078667" y="409" letter-spacing="20">INDEX</tspan>
+                <tspan x="442.254667" y="409" letter-spacing="2.66666698">-</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

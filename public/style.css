@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c8c8c8;
+}
+
+#app {
+  padding-left: 0;
+}
+
+#sidebar {
+  position: fixed;
+  float: left;
+  background: #303030;
+  height: 100vh;
+  max-width: inherit;
+  border-right: 2px solid #555;
+}
+
+#sidebar::-webkit-scrollbar {
+  width: 10px;
+  background-color: #222;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background-color: black;
+  -webkit-border-radius: 1ex;
+}
+
+#sidebar .logo {
+  width: 100%;
+  padding: 30px;
+}
+
+#sidebar section > * {
+  padding: 0 15px;
+}
+
+#sidebar .menu-item {
+  padding-left: 0px;
+}
+
+#sidebar .menu-item a {
+  transition: all 0.2s ease-out;
+  padding-left: 15px;
+  color: #c8c8c8;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#sidebar .menu-item a:hover {
+  color: white;
+}
+
+#sidebar .menu-item a.active,
+#sidebar .menu-item a:hover {
+  border-left: 3px solid #800c0c;
+  text-decoration: underline;
+}
+
+.content {
+  padding: 50px;
+}
+
+.card,
+.card:hover {
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  border-color: #800c0c;
+  color: #f00c0c;
+  cursor: pointer;
+}
+
+.card {
+  margin: 20px;
+}
+
+.author img {
+  height: 300px;
+}
+
+td button.btn {
+  border-color: black;
+}
+
+.spinner {
+  height: 100vh;
+  line-height: 100vh;
+}

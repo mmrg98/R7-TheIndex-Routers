@@ -27,6 +27,7 @@ const App = () => {
   useEffect(() => {
     try {
       fetchAllAuthors();
+      fetchAllBooks();
     } catch (err) {
       console.error(err);
     }
@@ -38,13 +39,7 @@ const App = () => {
     setLoading(false);
   };
 
-  useEffect(() => {
-    try {
-      fetchAllBooks();
-    } catch (err) {
-      console.error(err);
-    }
-  }, []);
+  
 
 
   const getContentView = () => {
@@ -56,9 +51,13 @@ const App = () => {
         <Route path="/authors/:authorID">
           <AuthorDetail />
         </Route>
+        <Route path="/books/:bookColor">
+          <BookList books={books}/>
+        </Route>
         <Route path="/books/">
           <BookList books={books}/>
         </Route>
+        
         <Route path="/authors/">
           <AuthorList authors={authors} />
         </Route>

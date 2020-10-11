@@ -9,20 +9,21 @@ import AuthorList from "./AuthorList";
 import AuthorDetail from "./AuthorDetail";
 
 const instance = axios.create({
-  baseURL: "https://the-index-api.herokuapp.com"
+  baseURL: "https://the-index-api.herokuapp.com",
 });
 
 const App = () => {
   const [authors, setAuthors] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const fetchAllAuthors = async () => {
+    const res = await instance.get("/api/authors/");
+    setAuthors(res.data);
+    setLoading(false);
+  };
+
   useEffect(() => {
     try {
-      const fetchAllAuthors = async () => {
-        const res = await instance.get("/api/authors/");
-        setAuthors(res.data);
-        setLoading(false);
-      };
       fetchAllAuthors();
     } catch (err) {
       console.error(err);
@@ -30,20 +31,19 @@ const App = () => {
   }, []);
 
   const getContentView = () => {
-    if (loading) {
-      return <Loading />;
-    } else {
-      return (
-        <Switch>
-          <Redirect exact from="/" to="/authors" />
-          <Route path="/authors/:authorID" component={AuthorDetail} />
-          <Route
-            path="/authors/"
-            render={props => <AuthorList {...props} authors={authors} />}
-          />
-        </Switch>
-      );
-    }
+    if (loading) return <Loading />;
+
+    return (
+      <Switch>
+        <Redirect exact from="/" to="/authors" />
+        <Route path="/authors/:authorID">
+          <AuthorDetail />
+        </Route>
+        <Route path="/authors/">
+          <AuthorList authors={authors} />
+        </Route>
+      </Switch>
+    );
   };
 
   return (
